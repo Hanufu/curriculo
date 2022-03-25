@@ -52,6 +52,7 @@ main{
 .box{
     background-color: var(--bg-cards);
     border-radius: 20px;
+    box-shadow: 2px 4px 10px rgb(19, 17, 17);
 }
 aside > .box{
     min-width: 348px;
