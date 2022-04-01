@@ -172,6 +172,10 @@ margin-left: 1rem;
     flex-direction: row;
     gap: 1rem;
 }
+.efeito:hover{
+    font-size: 120%;
+    opacity: 0.8;
+}
 .descriptionProject{
     flex-grow: 1;
     padding-top: 1rem;

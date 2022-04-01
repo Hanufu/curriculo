@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function(){
         for(let i = 0; i < res.length; i++){
             createProject(res[i])
         }
+        console.log(res)
     } );
     
     function createProject(repo){
@@ -32,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function(){
         let box = document.querySelector('#projets')
         project.base = `
         <section class="box project">
-        <span class="headerProject"><img src="assets/folder.svg" alt="folder icon" width="20px" height="20px"> <h3>${repo.name}</h3></span>
+        <a id="linkProject" href="${repo.html_url}"  target="_blank><span class="headerProject"><img src="assets/folder.svg" alt="folder icon" width="20px" height="20px"> <h3 class="efeito">${repo.name}</h3></span></a>
         <p class="descriptionProject">${repo.description}</p>
         <span class="footerProject">
             <span>
